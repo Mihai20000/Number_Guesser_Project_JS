@@ -6,7 +6,7 @@
 body {
   margin: 0 auto;
   padding: 3px;
-  background-color: red;
+  background-color: #6fffff;
 }
 
 .game-container {
@@ -166,7 +166,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
   
 .button[disabled] {
-  background-color: #bb000e;
+  background-color: blue;
   color: whitesmoke;
   cursor: default;
 }
