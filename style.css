@@ -9,6 +9,12 @@ body {
   background-color: #6beef6;
 }
 
+#time-spent {
+  position: fixed;
+  right: 2px;
+  background-color: aquamarine;  
+}
+
 .game-container {
   max-width: 640px;
   margin: 0 auto;

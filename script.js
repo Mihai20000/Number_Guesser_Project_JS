@@ -1,3 +1,31 @@
+// Function timer
+(function(){"use strict";
+
+
+var hoursSpent = document.getElementById("hours-spent");
+var minutesSpent = document.getElementById("minutes-spent");
+var secondsSpent = document.getElementById("seconds-spent");
+
+
+requestAnimationFrame(function updateTimeSpent(){
+    var timeNow = performance.now();
+
+    hoursSpent.value = round(timeNow/3600000);
+    minutesSpent.value = round((timeNow/60000));
+    secondsSpent.value = round(timeNow/1000);
+    
+    
+    requestAnimationFrame(updateTimeSpent);
+});
+var performance = window.performance, round = Math.round;
+
+if (hoursSpent.value >= 1) {
+    alert("You spent too much time here");
+}
+
+})();
+
+
 let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
